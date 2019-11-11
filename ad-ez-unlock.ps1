@@ -8,7 +8,8 @@
 #
 ##########################
 
-$oudn="ou=Users,ou=08 Central,OU=CCAC,DC=accounts,DC=ccac-ont,DC=ca"
+#enter in where your users objects exist in the AD Space via DN
+#$oudn="ou=Users,ou=,OU=,DC=,DC=,DC="  EXAMPLE assign a variable for this...
 import-module ActiveDirectory
 
 if (([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")){
